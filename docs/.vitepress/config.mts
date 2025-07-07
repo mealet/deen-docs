@@ -32,6 +32,19 @@ export default defineConfig({
 				items: [
 					{ text: "Introduction", link: "/getting-started/introduction" },
 					{ text: "Examples", link: "/getting-started/examples" },
+					{ text: "Installation", link: "/getting-started/installation" },
+					{
+						text: "Following Documentation",
+						link: "/getting-started/following-documentation",
+					},
+				],
+			},
+			{
+				text: "Basics",
+				items: [
+					{ text: "Numbers", link: "/basics/numbers" },
+					{ text: "Strings", link: "/basics/strings" },
+					{ text: "Types", link: "/basics/types" },
 				],
 			},
 		],
@@ -41,8 +54,8 @@ export default defineConfig({
 	markdown: {
 		languages: [deenLang],
 		theme: {
-			light: "vitesse-light",
-			dark: "vitesse-dark",
+			light: "github-light",
+			dark: "github-dark",
 		},
 	},
 });
