@@ -13,3 +13,23 @@
 4. Go to its directory and run: `cargo build --release`
 5. The executable file will be in the `target/release` folder.
 6. Don't forget to set the `DEEN_LIB` environment variable.
+
+## How to use?
+1. Write code. Example:
+```deen
+// source.dn
+fn main() i32 {
+  println!("Hello, World!");
+  return 0;
+}
+```
+<!-- TODO: Add link afte writing reference -->
+2. Compile (check CLI Reference for more):
+```
+$> deen source.dn output
+```
+3. Run the executable file:
+```
+$> ./output
+Hello World!
+```

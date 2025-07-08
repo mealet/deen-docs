@@ -76,6 +76,9 @@ extern "C" fn free(*void);
 
 fn main() i32 {
   let ptr: *i32 = malloc(sizeof!(i32)); // ATTENTION: don't forget to set pointer type!
+  //        ↥                                                 |
+  //        |--------------------------------------------------
+
   *ptr = 100;
 
   println!("Value is: {}", *ptr);
