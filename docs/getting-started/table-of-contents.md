@@ -9,6 +9,9 @@
 - [Table Of Contents](/getting-started/table-of-contents)
 
 ### 2. Basics
-- [Numbers](/basics/numbers)
-- [Strings](/basics/strings)
+- [Constants](/basics/constants)
+- [Variables](/basics/variables)
 - [Types](/basics/types)
+- [Comments](/basics/comments)
+- [Operations](/basics/operations)
+- [Constructions](/basics/constructions)
