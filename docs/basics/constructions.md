@@ -43,7 +43,7 @@ Right!
 ```
 
 ## WHILE
-Conditional loop. <br/>
+Conditional loop. Can be escaped with `break` keyword in statement <br/>
 Supported Types: `bool`
 
 ### Syntax
@@ -57,11 +57,15 @@ fn main() i32 {
   let counter = 0;
 
   while counter < 5 {
+    if counter == 4 {
+      break;
+    }
+
     println!("{}", counter);
     counter += 1;
   }
 
-  println!("Done");
+  println!("Done with {}", counter);
   return 0;
 }
 ```
@@ -70,8 +74,7 @@ fn main() i32 {
 1
 2
 3
-4
-Done
+Done with 4
 ```
 
 ----
@@ -119,6 +122,21 @@ fn main() i32 {
 2
 3
 4
+```
+----
+```
+fn main() i32 {
+  for element = [150, 123, 415] {
+    println!("{}", element);
+  }
+
+  return 0;
+}
+```
+```
+150
+123
+415
 ```
 
 ## EXTERN

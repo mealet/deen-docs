@@ -50,6 +50,13 @@ export default defineConfig({
 					{ text: "Constructions", link: "/basics/constructions" },
 				],
 			},
+			{
+				text: "Advanced",
+				items: [
+					{ text: "Functions Define", link: "/advanced/functions" },
+					{ text: "Structures And Enums", link: "/advanced/structures" },
+				],
+			},
 		],
 
 		socialLinks: [{ icon: "github", link: "https://github.com/mealet/deen" }],

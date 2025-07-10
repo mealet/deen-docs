@@ -19,7 +19,7 @@ hero:
 
 features:
 - title: Simple
-  icon: ☁️
+  icon: ✍️
   details: Language's frontend is simple and easy to understand. Deen originates from languages such as Rust, Zig and C
 - title: Fast
   icon: 💪
