@@ -1,15 +1,17 @@
-# Functions Define
+# Functions
 
 **Deen** allows you to define your own functions with different properties. <br/>
 _Note that_ public functions is used for including from other modules.
 
 ## Syntax
 ```deen
-pub/NOTHING fn IDENTIFIER ( IDENTIFIER: TYPE, ... ) TYPE/NOTHING { CODE }
+pub/NOTHING fn identifier ( param: type, ... ) type/NOTHING {
+  // CODE
+}
 ```
 
 ## Examples
-```
+```deen
 fn greet(name: *char) {
   return format!("Hello, {}!", name);
 }

@@ -5,8 +5,17 @@ Supported Types: `bool`
 
 ### Syntax
 ```deen
-if CONDITION { code }
-if CONDITION { code } else { code }
+if condition {
+  // code
+}
+
+// ------------
+
+if condition {
+  // code
+} else {
+  // code
+}
 ```
 
 ### Examples
@@ -48,7 +57,9 @@ Supported Types: `bool`
 
 ### Syntax
 ```deen
-while CONDITION { code }
+while condition {
+  // code
+}
 ```
 
 ### Examples
@@ -103,7 +114,9 @@ Supported Types: `integer types / array / structs` (refer to the "Structures" se
 
 ### Syntax
 ```deen
-for IDENTIFIER = ITERATOR { code }
+for identifier = iterator {
+  // code
+}
 ```
 
 ### Examples
@@ -137,47 +150,4 @@ fn main() i32 {
 150
 123
 415
-```
-
-## EXTERN
-Declaration of externed C functions. <br/>
-
-### Syntax
-```deen
-extern "EXTERN TYPE" pub/NOTHING fn IDENTIFIER ( TYPE, TYPE, ... ) TYPE/NOTHING
-```
-
-### Examples
-```deen
-extern "C" fn malloc(usize) *void;
-extern "C" fn free(*void);
-
-fn main() i32 {
-  let ptr: *i32 = malloc(sizeof!(i32)); // ATTENTION: don't forget to set pointer type!
-  //        ↥                                                 |
-  //        |--------------------------------------------------
-
-  *ptr = 100;
-
-  println!("Value is: {}", *ptr);
-
-  free(ptr); // and of course free the pointer
-  return 0;
-}
-```
-```
-Value is: 100
-```
-
-## EXTERN DECLARE
-Tool for declaring global extern constants. <br/>
-
-### Syntax
-```deen
-_extern_declare IDENTIFIER EXPRESSION
-```
-
-### Examples
-```deen
-_extern_declare stdio **i8
 ```

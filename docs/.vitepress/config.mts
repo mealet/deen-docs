@@ -53,7 +53,7 @@ export default defineConfig({
 			{
 				text: "Advanced",
 				items: [
-					{ text: "Functions Define", link: "/advanced/functions" },
+					{ text: "Functions", link: "/advanced/functions" },
 					{ text: "Structures And Enums", link: "/advanced/structures" },
 				],
 			},

@@ -1,5 +1,5 @@
 # Operations
-## Boolean Operations
+## Binary Operations
 Arithmetic operations are fundamental mathematical operations available in any programming language. <br/>
 Supported Types: `integer types / float types / and structs` (refer to the "Structures" section and "Reserved Structure Functions" for more details).
 

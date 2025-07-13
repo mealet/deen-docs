@@ -41,7 +41,7 @@ A pointer is also a stack-allocated value. Essentially, it is an usize integer v
 
 ```
 IMAGINE THIS IS STACK
-| ... | 100 | ... | ... | 0x0000001 |
+| ... | 100 | ... | ... | 0x1 |
          |--------------------|---------> let var = 100;
                               |---------> let var_ptr = &var;
 ```
