@@ -13,6 +13,7 @@ As **its** backend, Deen uses LLVM, which provides maximum performance of the co
 ## Useful Links
 
 - GitHub Repository: https://github.com/mealet/deen
+- Technical Documentation: https://mealet.github.io/deen
 - License: https://github.com/mealet/deen/blob/main/LICENSE
 - Releases: https://github.com/mealet/deen/releases
 - Issues: https://github.com/mealet/deen/issues

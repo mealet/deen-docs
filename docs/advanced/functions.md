@@ -4,10 +4,16 @@
 _Note that_ public functions is used for including from other modules.
 
 ## Syntax
+_Definition Syntax:_
 ```deen
 pub/NOTHING fn identifier ( param: type, ... ) type/NOTHING {
   // CODE
 }
+```
+
+_Usage Syntax_
+```deen
+identifier ( param, ... )
 ```
 
 ## Examples

@@ -53,8 +53,10 @@ export default defineConfig({
 			{
 				text: "Advanced",
 				items: [
+					{ text: "Scopes", link: "/advanced/scopes" },
 					{ text: "Functions", link: "/advanced/functions" },
-					{ text: "Structures And Enums", link: "/advanced/structures" },
+					{ text: "Structures And Enums", link: "/advanced/structures-enums" },
+					{ text: "Compiler Macros", link: "/advanced/compiler-macros" },
 				],
 			},
 		],

@@ -1,9 +1,10 @@
-# Structures
+# Structures And Enums
+## Structures
 **Structures** are the main tool for linking datasets. <br/>
 _Deen_ compiler allows you to define your own structures with your own methods.
 
-## Syntax
-**Definition Syntax:**
+### Syntax
+_Definition Syntax:_
 ```deen
 pub/NOTHING struct identifier {
   field: type,
@@ -15,7 +16,7 @@ pub/NOTHING struct identifier {
 }
 ```
 
-**Usage Syntax:**
+_Usage Syntax:_
 ```deen
 // initialization
 identifier { .field = value, ... }
@@ -27,7 +28,7 @@ identifier.field
 identifier.method( param, ... )
 ```
 
-## Examples
+### Examples
 ```deen
 struct Person {
   age: u32,
@@ -103,4 +104,54 @@ Iterating `5`
 2
 3
 4
+```
+
+## Enumerations
+**Enumeration** is a user-defined set of named integer constants. <br/>
+In _Deen_, enums are similar to those in the C language.
+
+### Syntax
+_Definition Syntax:_
+```deen
+pub/NOTHING enum identifier {
+  field,
+  ...
+}
+```
+
+_Usage Syntax:_
+```deen
+identifier.field
+```
+
+### Examples
+```deen
+enum ABC { A, B, C }
+
+fn main() {
+  println!("{}", ABC.A);
+  println!("{}", ABC.B);
+  println!("{}", ABC.C);
+}
+```
+```
+0
+1
+2
+```
+
+----
+
+```deen
+enum ABC { A, B, C }
+
+fn main() {
+  let a = ABC.A;
+  let b = ABC.A;
+
+  println!("a == b: {}" a == b);
+}
+```
+```
+a == b: true
 ```
