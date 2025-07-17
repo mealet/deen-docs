@@ -57,6 +57,12 @@ export default defineConfig({
 					{ text: "Functions", link: "/advanced/functions" },
 					{ text: "Structures And Enums", link: "/advanced/structures-enums" },
 					{ text: "Compiler Macros", link: "/advanced/compiler-macros" },
+					{ text: "Includes", link: "/advanced/includes" },
+					{ text: "Externals", link: "/advanced/externals" },
+					{
+						text: "Structures Implementations",
+						link: "/advanced/structures-implementations",
+					},
 				],
 			},
 		],

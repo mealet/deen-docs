@@ -19,6 +19,7 @@ They allow the user to define specific data with a strict size. <br/>
 | bool | 1-bit integer boolean flag (0 - false, 1 - true) | 1 | `bool` |
 | void | Void type, representing the absence of a value | 0 | `void` |
 | array | Basic array type | - | `[TYPE; SIZE]` |
+| tuple | Data structure that combines multiple types | - | `(TYPE, TYPE, ...)` |
 | pointer | Pointer type for holding a reference to data | - | `*TYPE` |
 | struct | Basic structure type | - | `ALIAS` |
 | enum | Basic enumeration type | - | `ALIAS` |

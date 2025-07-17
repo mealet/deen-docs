@@ -60,3 +60,10 @@ To define array constant use brackets:
 ```deen
 [1, 2, 3, 15, 144]
 ```
+
+## Tuple Constants
+**Tuple** is the data structure that combines multiple types by its index. <br/>
+To define tuple constant use parentheses:
+```deen
+(10, "hello", 'a') // (i32, *char, char)
+```
