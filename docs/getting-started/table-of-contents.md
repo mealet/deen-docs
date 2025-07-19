@@ -25,3 +25,7 @@ _-- Advanced language usage_
 
 - [Functions](/advanced/functions)
 - [Structures and Enums](/advanced/structures-enums)
+- [Compiler Macros](/advanced/compiler-macros)
+- [Includes](/advanced/includes)
+- [Externals](/advanced/externals)
+- [Structures Implementations](/advanced/structures-implementations)

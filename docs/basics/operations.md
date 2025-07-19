@@ -1,7 +1,8 @@
 # Operations
 ## Binary Operations
 Arithmetic operations are fundamental mathematical operations available in any programming language. <br/>
-Supported Types: `integer types / float types / and structs` (refer to the "Structures" section and "Reserved Structure Functions" for more details).
+Supported Types: `integer types / float types / and structs` <br/>
+(for structures see [Structures Implementations](/advanced/structures-implementations))
 
 Table of Supported Binary Operations:
 | Operator | Name | Description | Limitations |
@@ -34,7 +35,8 @@ fn main() i32 {
 
 ## Unary Operations
 Unary operations involve a single operand. <br/>
-Supported Types: `integer types / float types / structs` (see the "structures" section, and "reserved structures functions").
+Supported Types: `integer types / float types / structs` <br/>
+(for structures see [Structures Implementations](/advanced/structures-implementations))
 
 Table of Supported Unary Operations:
 | Operator | Name | Description | Limitations |
@@ -57,7 +59,8 @@ fn main() i32 {
 
 ## Boolean Operations
 Comparison and logical operations return a boolean output. <br/>
-Supported Types: `integer types / float types / char / *char / structs` (see the "structures" section, and "reserved structures functions").
+Supported Types: `integer types / float types / char / *char / structs` <br/>
+(for structures see [Structures Implementations](/advanced/structures-implementations))
 
 
 Table of Supported Boolean Operations:
