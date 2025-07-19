@@ -76,4 +76,12 @@ export default defineConfig({
 			dark: "github-dark",
 		},
 	},
+	head: [
+		[
+			"script",
+			{},
+			`window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`,
+		],
+		["script", { defer: "", src: "/_vercel/insights/script.js" }],
+	],
 });
