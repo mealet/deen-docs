@@ -65,6 +65,16 @@ export default defineConfig({
 					},
 				],
 			},
+			{
+				text: "Standard Library",
+				items: [
+					{ text: "@string", link: "/standard-library/string" },
+					{ text: "@io", link: "/standard-library/io" },
+					{ text: "@math", link: "/standard-library/math" },
+					{ text: "@fs", link: "/standard-library/fs" },
+					{ text: "@bytes", link: "/standard-library/bytes" },
+				],
+			},
 		],
 
 		socialLinks: [{ icon: "github", link: "https://github.com/mealet/deen" }],
