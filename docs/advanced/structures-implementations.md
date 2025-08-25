@@ -38,7 +38,7 @@ Integer number is: 10
 
 ----
 
-- **`fn drop(&self)`** - Data destructor. Calls on scope leave.
+- **`fn drop(&self)`** - Data destructor. Calls on scope exit.
 
 
 <details style="cursor: pointer"><summary style="user-select: none">Example</summary>
@@ -216,7 +216,7 @@ fn main() {
 
 ----
 
-- **`fn compare(&self, other: *Self) i32`** - For boolean operators on structs (_-1_ - left is greater; _0_ - equal; _1_ - right is greater)
+- **`fn compare(&self, other: *Self) i32`** - For boolean operators on structs (_-1_ - left is greater; _0_ - equal; _1_ - right is greater).
 
 <details style="cursor: pointer"><summary style="user-select: none">Example</summary>
 <p>
@@ -267,7 +267,7 @@ true
 
 ----
 
-- **`fn deref(&self) _`** - For the dereference operator
+- **`fn deref(&self) _`** - For the dereference operator.
 
 <details style="cursor: pointer"><summary style="user-select: none">Example</summary>
 <p>
@@ -306,7 +306,7 @@ a: 10
 
 ----
 
-- **`fn deref_assign(&self, value: _)`** - For the dereference assignment operator
+- **`fn deref_assign(&self, value: _)`** - For the dereference assignment operator.
 
 <details style="cursor: pointer"><summary style="user-select: none">Example</summary>
 <p>
@@ -345,7 +345,7 @@ fn main() {
 
 ----
 
-- **`fn slice(&self, index: usize) _`** - For the slice expression
+- **`fn slice(&self, index: usize) _`** - For the slice expression.
 
 <details style="cursor: pointer"><summary style="user-select: none">Example</summary>
 <p>
@@ -384,7 +384,7 @@ a[10]: 20
 
 ----
 
-- **`fn slice_assign(&self, index: usize, value: _)`** - For the slice assign statement
+- **`fn slice_assign(&self, index: usize, value: _)`** - For the slice assign statement.
 
 <details style="cursor: pointer"><summary style="user-select: none">Example</summary>
 <p>

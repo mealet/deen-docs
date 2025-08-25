@@ -12,7 +12,7 @@ fn main() i32 {
 
 ### Formatting Strings
 ```deen
-fn greet(name: *char) {
+fn greet(name: *char) *char {
   return format!("Hello, {}!", name);
 }
 

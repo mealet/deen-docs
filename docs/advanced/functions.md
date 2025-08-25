@@ -18,7 +18,7 @@ identifier ( param, ... )
 
 ## Examples
 ```deen
-fn greet(name: *char) {
+fn greet(name: *char) *char {
   return format!("Hello, {}!", name);
 }
 
