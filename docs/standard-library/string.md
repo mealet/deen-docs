@@ -16,14 +16,23 @@ iterator_ptr: usize,
 > `fn from(value: *char) String` <br/>
 > Creates new string from CStr value (char pointer).
 ----
+> `fn from_raw_parts(ptr: *void, len: usize, capacity: usize) String` <br/>
+> Creates new string from provided pointer, length and capacity.
+----
 > `fn with_capacity(capacity: usize) String` <br/>
 > Creates new empty string with provided capacity.
 ----
 > `fn clone(&self) String` <br/>
 > Clones string instance (allocates new heap string and copies value).
 ----
+> `fn clone_reversed(&self) String` <br/>
+> Clones string instance with reversed content.
+----
 > `fn len(&self) usize` <br/>
-> Returns string length
+> Returns string's length.
+----
+> `fn capacity(&self) usize` <br/>
+> Returns string's capacity.
 ----
 > `fn push(&self, value: char)` <br/>
 > Appends provided character to the end of string.
@@ -31,8 +40,17 @@ iterator_ptr: usize,
 > `fn push_str(&self, value: *char)` <br/>
 > Appends CStr value to the end of string.
 ----
+> `fn push_string(&self, other: String)` <br/>
+> Appends other `String` content to the end of current.
+----
 > `fn pop(&self) char` <br/>
 > Removes last character and returns it. If empty returns '\0'
+----
+> `fn remove(&self, position: usize)` <br/>
+> Removes character on specified position (capacity doesn't change).
+----
+> `truncate(&self, new_len: usize)` <br/>
+> Truncates string's length (capacity doesn't change)
 ----
 > `fn peek(&self, position: usize) char` <br/>
 > Returns character on provided position. Panic if out of bounds.
@@ -46,7 +64,34 @@ iterator_ptr: usize,
 > `fn contains_str(&self, value: *char) bool` <br/>
 > Returns `true` if string instance contains provided CStr value.
 ----
-> `fn raw(&self) *char` <br/>
+> `fn replace(&self, from: *char, to: *char)` <br/>
+> Replaces string occurences with provided CStr value.
+----
+> `find(&self, pattern: char) usize` <br/>
+> Finds provided character in string and returns its index.
+----
+> `find_str(&self, pattern: *char) usize` <br/>
+> Finds provided CStr occurence and returns index of its first character.
+----
+> `to_uppercase(&self) String` <br/>
+> Returns clone of string instance in uppercase format.
+----
+> `to_lowercase(&self) String` <br/>
+> Returns clone of string instance in lowercase format.
+----
+> `to_bytes(&self) Bytes` (from `stdlib.bytes`) <br/>
+> Returns string instance represented in `Bytes` structure.
+----
+> `clear(&self)` <br/>
+> Clears string (capacity doesn't change).
+----
+> `reverse(&self)` <br/>
+> Reverses string content.
+----
+> `is_empty(&self)` <br/>
+> Returns if string content is empty.
+----
+> `fn as_ptr(&self) *char` <br/>
 > Returns raw heap pointer.
 
 **Compiler Implementations:**

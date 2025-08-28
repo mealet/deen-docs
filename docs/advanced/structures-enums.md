@@ -1,13 +1,18 @@
 # Structures And Enums
 ## Structures
 **Structures** are the main tool for linking datasets. <br/>
-_Deen_ compiler allows you to define your own structures with your own methods.
+_Deen_ compiler allows you to define your own structures with your own methods. <br/>
+
+> [!TIP] Features
+> - You can add _optional_ fields, just use `__` prefix in name.
+> - All methods are allowed only after fields.
 
 ### Syntax
 _Definition Syntax:_
 ```deen
 pub/NOTHING struct identifier {
   field: type,
+  __optional_field: type,
   ...,
 
   fn identifier ( param: type, ... ) type/NOTHING {

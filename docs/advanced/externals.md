@@ -87,3 +87,35 @@ _extern_declare stdout **i8
 _extern_declare stderr **i8
 _extern_declare stdin **i8
 ```
+
+## External Linkages
+**External Linkages** is a single statement to automatically link main code with provided C (or other languages supported by `gcc`/`clang`/`msvc`) library. <br/>
+Linking file doesn't mean you automatically gets declarations, you also have to declare them by `extern` statement (see above).
+
+### Syntax
+```deen
+_link_c "PATH";
+```
+
+### Examples
+```c
+// lib.c
+int add(int a, int b) {
+  return a + b;
+}
+```
+```deen
+// main.dn
+_link_c "lib.c";
+extern "C" fn add(i32, i32) i32;
+
+fn main() i32 {
+  println!("{}", add(10, 15));
+
+  return 0;
+}
+```
+
+```
+25
+```

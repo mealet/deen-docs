@@ -29,4 +29,19 @@ Example: `sizeof!(i32)`
 ----
 - **`cast!(EXPRESSION, TYPE) TYPE`** - Casts an expression to the targeted type.
 
+> [!NOTE] Allowed Types Casts
+> - `integer type -> integer type`
+> - `integer type -> float type`
+> - `integer type -> char`
+> - `integer type -> bool`
+> - `integer type -> pointer type`
+> ----
+> - `float type -> float type`
+> - `float type -> integer type`
+> ----
+> - `char -> integer type`
+> - `bool -> integer type`
+> - `pointer type -> integer type`
+> - `pointer type -> pointer type`
+
 Example: `cast!(10, f64)`
