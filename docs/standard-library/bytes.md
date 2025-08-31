@@ -36,6 +36,7 @@ iterator_ptr: usize
 > Returns raw pointer to buffer.
 
 **Compiler Implementations:**
+- `fn display(&self) *char`
 - `fn drop(&self)`
 - `fn iterate(&self) (char, bool)`
 - `fn slice(&self, index: usize) char`
