@@ -58,7 +58,7 @@
 				},
 				{
 					"name": "keyword.declaration.deen",
-					"match": "\\b(let|pub|fn|import|include|extern|struct|enum|typedef|_extern_declare)\\b"
+					"match": "\\b(let|pub|ext|fn|import|include|extern|struct|enum|typedef|_extern_declare)\\b"
 				},
 				{
 					"name": "constant.language.deen",
