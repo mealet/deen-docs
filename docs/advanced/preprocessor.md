@@ -34,7 +34,6 @@ Compiler has its predefined variables for compile time resolves:
 __LANG__ // Language name: deen
 __LANG_VERSION__ // Language version in SemVer: *.*.*
 
-
 __OS_LINUX__ // Linux system boolean flag: 1 / 0
 __OS_WINDOWS__ // Windows system boolean flag: 1 / 0
 __OS_MACOS__ // MacOS system boolean flag: 1 / 0
