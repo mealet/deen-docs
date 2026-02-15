@@ -6,7 +6,13 @@ Preprocessor in Deen is inspired by C. It provides toolchain to resolve code and
 
 > [!NOTE]
 >
-> - **`#define [NAME] [VALUE]`** - define new preprocessor variable (example: `#define PI 3.14`)
+> - **`#define [NAME] [VALUE]`** - define new preprocessor variable. Example:
+>
+> ```deen
+> #define PI 3.14
+> println!("Pi number is PI");
+> ```
+>
 > - **`#if [EXPR]`, `#elif [EXPR]`, `#else`, `#endif`** - logical branches. Example:
 >
 > ```deen
