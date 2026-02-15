@@ -63,6 +63,10 @@ export default defineConfig({
 						text: "Structures Implementations",
 						link: "/advanced/structures-implementations",
 					},
+					{
+						text: "Deen Preprocessor",
+						link: "/advanced/preprocessor",
+					},
 				],
 			},
 			{
