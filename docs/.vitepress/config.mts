@@ -73,6 +73,7 @@ export default defineConfig({
 					{ text: "@math", link: "/standard-library/math" },
 					{ text: "@fs", link: "/standard-library/fs" },
 					{ text: "@bytes", link: "/standard-library/bytes" },
+					{ text: "@vec", link: "/standard-library/vec" },
 				],
 			},
 		],
