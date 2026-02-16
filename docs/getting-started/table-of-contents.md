@@ -29,3 +29,12 @@ _-- Advanced language usage_
 - [Includes](/advanced/includes)
 - [Externals](/advanced/externals)
 - [Structures Implementations](/advanced/structures-implementations)
+
+### 4. Standard Library
+_-- Standard Library Reference_
+
+- [@string](/standard-library/string)
+- [@io](/standard-library/io)
+- [@math](/standard-library/math)
+- [@fs](/standard-library/fs)
+- [@vec](/standard-library/vec)

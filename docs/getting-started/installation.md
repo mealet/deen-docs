@@ -1,7 +1,7 @@
 # Installation
 
 ## Simple Installation
-1. Install a supported C compiler: [clang](https://clang.llvm.org/)
+1. Install a supported C compiler: [clang](https://clang.llvm.org/), [gcc](https://gcc.gnu.org/), msvc
 2. Download the latest build for your system from GitHub: [Latest Release](https://github.com/mealet/deen/releases/latest)
 3. Unpack it anywhere and add the executable to your `PATH` environment variable.
 4. Set the **`DEEN_LIB`** environment variable to the full path of the **`stdlib`** folder (located near the binary). Example: `/home/mealet/deen/stdlib`
@@ -23,7 +23,6 @@ fn main() i32 {
   return 0;
 }
 ```
-<!-- TODO: Add link afte writing reference -->
 2. Compile (check CLI Reference for more):
 ```
 $> deen source.dn output
